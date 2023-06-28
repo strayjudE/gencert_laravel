@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GenerateController;
+use App\Http\Controllers\IndigencyController;
+use App\Http\Controllers\PermitController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get('/generate-certificate', [GenerateController::class,'generate'])->name('generate-certificate');
+Route::get('/generate-indicertificate', [IndigencyController::class,'generate'])->name('generate-indicertificate');
+Route::get('/generate-permitcertificate', [PermitController::class,'generate'])->name('generate-permitcertificate');
